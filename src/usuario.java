@@ -6,22 +6,29 @@ public class usuario {
     private String email;
     private List<inscripcion> misInscripciones;
 
-    usuario(String nombre, String email){
+    public usuario(String nombre, String email) {
         this.setNombre(nombre);
         this.setEmail(email);
         this.misInscripciones = new ArrayList<>();
     }
-    public void agregarInscripcion(Inscripcion insc) {
+
+    public void agregarInscripcion(inscripcion insc) {
         this.misInscripciones.add(insc);
     }
-public class Usuario {
-    
 
-    public String getNombre(){return nombre;}
-    public String getEmail(){return email;}
-
-    public void setNombre(String nombre){this.nombre = nombre;
+    public String getNombre() {
+        return nombre;
     }
-    public void setEmail(String email){this.email = email;}
-}
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
