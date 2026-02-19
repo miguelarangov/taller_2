@@ -1,3 +1,5 @@
-public class nivel {
-    
+public enum nivel {
+    BASICO,
+    INTERMEDIO,
+    AVANZADO
 }
